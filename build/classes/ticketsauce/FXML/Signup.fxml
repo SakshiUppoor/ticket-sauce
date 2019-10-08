@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="994.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.SignupController">
+   <children>
+      <Polygon fill="#3557dc" layoutX="217.0" layoutY="184.0" points="-222.60000610351562, -184.0, 99.00003051757812, 439.20001220703125, 263.8000183105469, -184.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fill="#3557dc" layoutX="227.0" layoutY="194.0" points="-227.0, -194.0, 89.00003051757812, 429.20001220703125, -227.00001525878906, 429.20001220703125" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <VBox alignment="CENTER" layoutX="19.0" layoutY="116.0" prefHeight="386.0" prefWidth="366.0" spacing="20.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="367.0" text="Already signed up?" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <JFXButton id="login" fx:id="login" onAction="#loginAction" prefHeight="46.0" prefWidth="155.0" stylesheets="@styles.css" text="Log In">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="481.0" layoutY="90.0" prefHeight="352.0" prefWidth="434.0" spacing="50.0">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#3557dc" prefHeight="26.0" prefWidth="450.0" promptText="Username">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="email" focusColor="#3557dc" promptText="Email address">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password1" focusColor="#3557dc" promptText="Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="password2" focusColor="#3557dc" promptText="Confirm password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <HBox fx:id="warning" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="warningicon" fitHeight="24.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/warning.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="231.0" text="Passwords don't match." textFill="#3557dc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="180.0">
+               <children>
+                  <JFXButton id="signup" fx:id="signup" onAction="#signupAction" prefHeight="46.0" prefWidth="155.0" stylesheets="@styles.css" text="Sign Up">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="38.0" layoutY="27.0" prefHeight="78.0" prefWidth="302.0" spacing="25.0">
+         <children>
+            <ImageView fitHeight="41.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" rotate="-91.9">
+               <image>
+                  <Image url="@key.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="CENTER" prefHeight="18.0" prefWidth="367.0" text="SmartPass" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="994.0" style="-fx-background-color: #eeeeee;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.PasswordsController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="38.0" layoutY="27.0" prefHeight="78.0" prefWidth="302.0" spacing="25.0">
+         <children>
+            <ImageView fitHeight="41.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" rotate="-91.9">
+               <image>
+                  <Image url="@../images/key-blue.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="CENTER" prefHeight="18.0" prefWidth="367.0" text="SmartPass" textAlignment="CENTER" textFill="#3557dc">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <GridPane alignment="BOTTOM_LEFT" hgap="10.0" layoutX="25.0" layoutY="91.0" prefHeight="59.0" prefWidth="946.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001831054687" minWidth="10.0" prefWidth="135.40001831054687" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.5999755859375" minWidth="10.0" prefWidth="149.60001220703126" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.599951171875" minWidth="10.0" prefWidth="249.5999877929687" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.3999267578125" minWidth="10.0" prefWidth="253.5999755859375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20000000000005" minWidth="10.0" prefWidth="115.20002441406245" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="BASELINE_LEFT" prefHeight="20.0" prefWidth="138.0" text="Website" textFill="#929292">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label alignment="BASELINE_LEFT" prefHeight="20.0" prefWidth="186.0" text="Username" textFill="#929292" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="BASELINE_LEFT" prefHeight="20.0" prefWidth="230.0" text="Email address" textFill="#929292" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="BASELINE_LEFT" prefHeight="20.0" prefWidth="255.0" text="Password" textFill="#929292" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="124.0" GridPane.columnIndex="4">
+               <children>
+                  <JFXButton prefHeight="51.0" prefWidth="99.0" style="-fx-border-radius: 10; -fx-background-color: #3557dcff;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="34.0" layoutY="151.0" prefHeight="447.0" prefWidth="946.0" style="-fx-background-color: #ffffff00;">
+         <content>
+            <VBox fx:id="list" prefHeight="767.0" prefWidth="930.0" spacing="20.0" style="-fx-background-color: #00000000;">
+               <children>
+                  <GridPane hgap="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="900.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001831054687" minWidth="10.0" prefWidth="135.40001831054687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.5999755859375" minWidth="10.0" prefWidth="149.60001220703126" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.599951171875" minWidth="10.0" prefWidth="249.5999877929687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.3999267578125" minWidth="10.0" prefWidth="253.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20000000000005" minWidth="10.0" prefWidth="115.20002441406245" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="186.0" text="smallwig23" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="230.0" text="fake_email@gmail.com" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="257.0" text="•••••••••••" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="124.0" GridPane.columnIndex="4">
+                           <children>
+                              <JFXButton fx:id="see" onMousePressed="#seePass" prefHeight="34.0" prefWidth="50.0" text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/eye.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="copy" text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/copy.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="20.0" prefWidth="138.0" text="Gmail">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane hgap="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="900.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001831054687" minWidth="10.0" prefWidth="135.40001831054687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.5999755859375" minWidth="10.0" prefWidth="149.60001220703126" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.599951171875" minWidth="10.0" prefWidth="249.5999877929687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.3999267578125" minWidth="10.0" prefWidth="253.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20000000000005" minWidth="10.0" prefWidth="115.20002441406245" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="138.0" text="Gmail">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="186.0" text="smallwig23" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="230.0" text="fake_email@gmail.com" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="257.0" text="•••••••••••" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="124.0" GridPane.columnIndex="4">
+                           <children>
+                              <JFXButton onMousePressed="#seePass" prefHeight="34.0" prefWidth="50.0" text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/eye.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/copy.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <GridPane hgap="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="900.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001831054687" minWidth="10.0" prefWidth="135.40001831054687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.5999755859375" minWidth="10.0" prefWidth="149.60001220703126" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.599951171875" minWidth="10.0" prefWidth="249.5999877929687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.3999267578125" minWidth="10.0" prefWidth="253.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20000000000005" minWidth="10.0" prefWidth="115.20002441406245" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="138.0" text="Gmail">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="186.0" text="smallwig23" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="230.0" text="fake_email@gmail.com" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="257.0" text="•••••••••••" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="124.0" GridPane.columnIndex="4">
+                           <children>
+                              <JFXButton onMousePressed="#seePass" prefHeight="34.0" prefWidth="50.0" text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/eye.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/copy.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <GridPane hgap="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="900.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001831054687" minWidth="10.0" prefWidth="135.40001831054687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.5999755859375" minWidth="10.0" prefWidth="149.60001220703126" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.599951171875" minWidth="10.0" prefWidth="249.5999877929687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.3999267578125" minWidth="10.0" prefWidth="253.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20000000000005" minWidth="10.0" prefWidth="115.20002441406245" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="138.0" text="Gmail">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="186.0" text="smallwig23" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="230.0" text="fake_email@gmail.com" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="257.0" text="•••••••••••" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="124.0" GridPane.columnIndex="4">
+                           <children>
+                              <JFXButton onMousePressed="#seePass" prefHeight="34.0" prefWidth="50.0" text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/eye.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/copy.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <GridPane hgap="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="900.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001831054687" minWidth="10.0" prefWidth="135.40001831054687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.5999755859375" minWidth="10.0" prefWidth="149.60001220703126" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.599951171875" minWidth="10.0" prefWidth="249.5999877929687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.3999267578125" minWidth="10.0" prefWidth="253.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20000000000005" minWidth="10.0" prefWidth="115.20002441406245" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="138.0" text="Gmail">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="186.0" text="smallwig23" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="230.0" text="fake_email@gmail.com" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="257.0" text="•••••••••••" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="124.0" GridPane.columnIndex="4">
+                           <children>
+                              <JFXButton onMousePressed="#seePass" prefHeight="34.0" prefWidth="50.0" text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/eye.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/copy.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <GridPane hgap="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="900.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001831054687" minWidth="10.0" prefWidth="135.40001831054687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.5999755859375" minWidth="10.0" prefWidth="149.60001220703126" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.599951171875" minWidth="10.0" prefWidth="249.5999877929687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.3999267578125" minWidth="10.0" prefWidth="253.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20000000000005" minWidth="10.0" prefWidth="115.20002441406245" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="138.0" text="Gmail">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="186.0" text="smallwig23" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="230.0" text="sakshiuppoor@gmail.com" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="257.0" text="rockhopp123fet#rkflkdlk" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="124.0" GridPane.columnIndex="4">
+                           <children>
+                              <JFXButton onMousePressed="#seePass" prefHeight="34.0" prefWidth="50.0" text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/eye.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/copy.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <GridPane hgap="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="900.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001831054687" minWidth="10.0" prefWidth="135.40001831054687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.5999755859375" minWidth="10.0" prefWidth="149.60001220703126" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.599951171875" minWidth="10.0" prefWidth="249.5999877929687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.3999267578125" minWidth="10.0" prefWidth="253.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20000000000005" minWidth="10.0" prefWidth="115.20002441406245" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="138.0" text="Gmail">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="186.0" text="smallwig23" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="230.0" text="sakshiuppoor@gmail.com" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="257.0" text="rockhopp123fet#rkflkdlk" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="124.0" GridPane.columnIndex="4">
+                           <children>
+                              <JFXButton onMousePressed="#seePass" prefHeight="34.0" prefWidth="50.0" text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/eye.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/copy.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <GridPane hgap="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="900.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001831054687" minWidth="10.0" prefWidth="135.40001831054687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.5999755859375" minWidth="10.0" prefWidth="149.60001220703126" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.599951171875" minWidth="10.0" prefWidth="249.5999877929687" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.3999267578125" minWidth="10.0" prefWidth="253.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20000000000005" minWidth="10.0" prefWidth="115.20002441406245" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="138.0" text="Gmail">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="186.0" text="smallwig23" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="230.0" text="sakshiuppoor@gmail.com" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="257.0" text="rockhopp123fet#rkflkdlk" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="124.0" GridPane.columnIndex="4">
+                           <children>
+                              <JFXButton onMousePressed="#seePass" prefHeight="34.0" prefWidth="50.0" text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/eye.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton text=" ">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/copy.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

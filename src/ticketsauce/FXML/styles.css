@@ -1,0 +1,11 @@
+#login {
+  -fx-border-color: #fff;
+  -fx-text-fill: #fff;
+  -fx-border-radius: 8;
+}
+
+#signup {
+  -fx-text-fill: #fff;
+  -fx-border-radius: 8;
+  -fx-background-color: #3557dc;
+}
