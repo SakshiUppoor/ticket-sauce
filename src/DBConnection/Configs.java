@@ -14,5 +14,5 @@ public class Configs {
     protected String dbport = "3306";
     protected String dbuser = "SakshiUppoor";
     protected String dbpass = "YOUR_PASSWORD_HERE";
-    protected String dbname = "passwordmanager";
+    protected String dbname = "ticketsauce";
 }
