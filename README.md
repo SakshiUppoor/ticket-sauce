@@ -24,7 +24,7 @@
 
 ## About the Project
 <p align="center">
-<img style="margin:1em" src="https://imgur.com/42BKsGp.png" height="450"/>
+<img style="margin:1em" src="https://imgur.com/42BKsGp.png" width="100%"/>
 </p>
 
 ### Pages
