@@ -1,8 +1,6 @@
 <br />
 <p align="center">
-  <a href="http://jiffy-attendance-tracker.herokuapp.com/">
-    <img src="https://imgur.com/pBJRVmv.png" alt="Logo" width="80" height="80">
-  </a>
+  <img src="https://imgur.com/pBJRVmv.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Ticket Sauce</h3>
 
@@ -14,9 +12,9 @@
     <br />
     View Demo
     ·
-    <a href="https://github.com/SakshiUppoor/jiffy-attendance-tracker/issues">Report Bug</a>
+    <a href="https://github.com/SakshiUppoor/ticket-sauce/issues">Report Bug</a>
     ·
-    <a href="https://github.com/SakshiUppoor/jiffy-attendance-tracker/issues">Request Feature</a>
+    <a href="https://github.com/SakshiUppoor/ticket-sauce/issues">Request Feature</a>
   </p>
 </p>
 
