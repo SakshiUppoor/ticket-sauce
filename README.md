@@ -20,7 +20,7 @@
 
 ## Team
 * <a href="https://github.com/Rutugaglani"><b>Rutu Gaglani</b></a> - Frontend & Graphic Design
-* <a href="https://github.com/SharayuBokde"><b>Sharayu Bokde</b></a> - Frontend Dev & Graphic Design
+* <a href="https://github.com/SharayuBokde"><b>Sharayu Bokde</b></a> - Frontend & Graphic Design
 
 ## About the Project
 <p align="center">
