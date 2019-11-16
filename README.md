@@ -56,6 +56,3 @@
 * [Scene Builder](https://gluonhq.com/products/scene-builder/) - For designing FXMLs
 * [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - Visual database design tool
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
