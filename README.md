@@ -7,7 +7,7 @@
   <p align="center">
     A desktop app that lets you book tickets for show timings according to your convenience!
     <br />
-    <a href="https://github.com/SakshiUppoor/jiffy-attendance-tracker"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/SakshiUppoor/ticket-sauce"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     View Demo
