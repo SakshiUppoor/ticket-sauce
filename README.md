@@ -21,7 +21,7 @@
 ## Team
 * <a href="https://github.com/Rutugaglani"><b>Rutu Gaglani</b></a> - Frontend & Graphic Design
 * <a href="https://github.com/SharayuBokde"><b>Sharayu Bokde</b></a> - Frontend & Graphic Design
-* <a href="https://github.com/SakshiUppoor"><b>Sakshi Uppoor</b></a> - Backend & Database
+* <a href="https://github.com/SakshiUppoor"><b>Sakshi Uppoor</b></a> - Full-stack & Database
 
 ## About the Project
 <p align="center">
