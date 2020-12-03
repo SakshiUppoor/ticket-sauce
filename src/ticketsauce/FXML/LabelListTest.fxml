@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import java.util.ArrayList?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabelListController">
+    <Label  fx:id="label1"/>
+    <Label  fx:id="label2"/>
+    <Label  fx:id="label3"/>
+    <Label  fx:id="label4"/>
+    <Label  fx:id="label5"/>
+    <Label  fx:id="label6"/>
+    <Label  fx:id="label7"/>
+    <Label  fx:id="label8"/>
+    <Label  fx:id="label9"/>
+    <Label  fx:id="label10"/>
+
+    <fx:define>
+        <ArrayList fx:id="labelList" >
+            <fx:reference source="label1"/>
+            <fx:reference source="label2"/>
+            <fx:reference source="label3"/>
+            <fx:reference source="label4"/>
+            <fx:reference source="label5"/>
+            <fx:reference source="label6"/>
+            <fx:reference source="label7"/>
+            <fx:reference source="label8"/>
+            <fx:reference source="label9"/>
+            <fx:reference source="label10"/>
+        </ArrayList>
+    </fx:define>
+</VBox>

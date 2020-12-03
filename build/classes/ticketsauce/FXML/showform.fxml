@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="858.0" style="-fx-background-color: #1f1e30ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.ShowformController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="185.0" layoutY="62.0" prefHeight="372.0" prefWidth="507.0" spacing="40.0">
+         <children>
+            <ChoiceBox fx:id="choiceMovie" prefHeight="64.0" prefWidth="376.0" />
+            <DatePicker fx:id="date" prefHeight="51.0" prefWidth="349.0" />
+            <JFXTimePicker fx:id="time" defaultColor="#8057b5" prefHeight="50.0" prefWidth="300.0" promptText="Show Time" style="-fx-background-color: #fff;" />
+            <JFXButton id="signup" fx:id="submit" onAction="#createShow" stylesheets="@styles.css" text="SUMBIT" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -5,7 +5,6 @@
  */
 package ticketsauce;
 
-import ticketsauce.Controllers.*;
 import com.jfoenix.controls.*;
 import java.io.IOException;
 import java.net.URL;
@@ -26,7 +25,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.application.Platform;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 
 /**
@@ -65,6 +66,8 @@ public class LoginController implements Initializable {
     private Connection connection;
     private DBHandler handler;
     private PreparedStatement pst;
+    private boolean is_staff;
+    private int currentUserID;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -75,7 +78,13 @@ public class LoginController implements Initializable {
     public void loginAction(ActionEvent e) throws ClassNotFoundException, SQLException, IOException
     {
         //Retrieve data from database
-        String q1 = "SELECT * from users where Username=?";
+        
+        handler = new DBHandler();
+        String q1="UPDATE users SET is_logged_in=0;";
+        connection = handler.getConnection();
+        pst = connection.prepareStatement(q1);
+        pst.executeUpdate();
+        q1 = "SELECT * from users where Username=?";
         connection = handler.getConnection();
             
         try {
@@ -112,14 +121,22 @@ public class LoginController implements Initializable {
                     while(rs.next())
                     {
                         count = count + 1;
+                        is_staff = rs.getBoolean("is_staff");
+                        currentUserID = rs.getInt("idUsers");
                     }
 
                     if(count==1)
                     {
-                        Parent mainView = FXMLLoader.load(getClass().getResource("FXML/hello.fxml"));
+                        String q2 = "UPDATE users SET is_logged_in=1 WHERE idUsers=" + currentUserID + ";";
+                        pst = connection.prepareStatement(q2);
+                        pst.executeUpdate();
+                        Parent mainView;
+                        FXMLLoader loader = null;
+                        loader = new FXMLLoader(getClass().getResource("FXML/template.fxml"));
+                        TemplateController controller = loader.getController();
+                        mainView = (Parent) loader.load();
                         Scene mainScene = new Scene(mainView);
                         Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
-
                         window.setScene(mainScene);
                         window.show();
                         System.out.println("Login succesful");
@@ -158,5 +175,17 @@ public class LoginController implements Initializable {
         
         window.setScene(signinScene);
         window.show();
+    }
+    
+    
+    @FXML
+    void exitApplication(MouseEvent event) throws ClassNotFoundException, SQLException {
+        
+        handler = new DBHandler();
+        String q1="UPDATE users SET is_logged_in=0;";
+        connection = handler.getConnection();
+        pst = connection.prepareStatement(q1);
+        pst.executeUpdate();
+        Platform.exit();
     }
 }

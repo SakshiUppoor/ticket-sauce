@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1059.0" style="-fx-background-color: #1f1e30ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.AdminController">
+   <children>
+      <JFXButton id="btn1" layoutX="392.0" layoutY="244.0" onAction="#addMovie" prefHeight="74.0" prefWidth="276.0" stylesheets="@seat.css" text="Add Movie " textFill="#fdfdfd">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton id="btn1" layoutX="392.0" layoutY="345.0" onAction="#addShow" prefHeight="74.0" prefWidth="276.0" stylesheets="@seat.css" text="Add Show" textFill="#fafafa" />
+   </children>
+</AnchorPane>

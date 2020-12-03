@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1047.0" style="-fx-background-color: #1f1e30ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.MovieController">
+   <children>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="12.0" prefHeight="103.0" prefWidth="261.0" text="Movies" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="51.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" layoutX="31.0" layoutY="115.0" prefHeight="555.0" prefWidth="998.0" spacing="90.0">
+         <children>
+            <VBox fx:id="movie1" onMouseClicked="#goToMovie" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <ImageView fx:id="poster1" fitHeight="432.0" fitWidth="253.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images12/Ratatouille.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="name1" prefHeight="54.0" prefWidth="252.0" text="Ratatouille" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/like.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="likes1" text="23" textFill="WHITE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="id1" text="id1" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="movie2" onMouseClicked="#goToMovie" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <ImageView fx:id="poster2" fitHeight="425.0" fitWidth="261.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@Images/aladdin.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="name2" text="Aladdin" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/like.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="likes2" text="23" textFill="WHITE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="id2" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="movie3" onMouseClicked="#goToMovie" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <ImageView fx:id="poster3" fitHeight="424.0" fitWidth="261.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@Images/Brave.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="name3" text="Brave" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/like.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="likes3" text="23" textFill="WHITE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="id3" text="id1" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

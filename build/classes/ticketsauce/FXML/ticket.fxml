@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="763.0" prefWidth="1159.0" style="-fx-background-color: #1f1e30ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.TicketController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <HBox alignment="CENTER" layoutX="134.0" layoutY="102.0" prefHeight="507.0" prefWidth="1002.0" spacing="50.0">
+         <children>
+            <ImageView fx:id="ticketbg1" fitHeight="468.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/rect1899.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ticketbg2" fitHeight="468.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/rect1899.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ticketbg3" fitHeight="468.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/rect1899.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox fx:id="info13" layoutX="154.0" layoutY="121.0" prefHeight="74.0" prefWidth="270.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="306.0" text="Movie" textFill="#ffffffa9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="name1" alignment="CENTER" prefHeight="63.0" prefWidth="262.0" text="Ratatouille" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Line fx:id="line1" endX="96.79998779296875" endY="-51.600006103515625" layoutX="306.0" layoutY="361.0" startX="-140.00001525878906" startY="-51.600006103515625" stroke="#cacaca" />
+      <VBox fx:id="info11" layoutX="161.0" layoutY="210.0" prefHeight="74.0" prefWidth="112.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="306.0" text="Date" textFill="#acacaca8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="date1" prefHeight="63.0" prefWidth="262.0" text="22 Oct">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="info12" layoutX="305.0" layoutY="205.0" prefHeight="74.0" prefWidth="112.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="306.0" text="Time" textFill="#acacaca8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="time1" prefHeight="47.0" prefWidth="123.0" text="05:44 PM">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="info14" layoutX="165.0" layoutY="323.0" prefHeight="122.0" prefWidth="238.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="306.0" text="Seats" textFill="#acacaca8" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="seats1" prefHeight="89.0" prefWidth="238.0" text="A1, B2, C2, D3, F5, G1, G2" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="info21" layoutX="505.0" layoutY="124.0" prefHeight="74.0" prefWidth="270.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="306.0" text="Movie" textFill="#ffffffa9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="name2" alignment="CENTER" prefHeight="63.0" prefWidth="262.0" text="Ratatouille" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Line fx:id="line2" endX="96.79998779296875" endY="-51.600006103515625" layoutX="657.0" layoutY="364.0" startX="-140.00001525878906" startY="-51.600006103515625" stroke="#cacaca" />
+      <VBox fx:id="info22" layoutX="512.0" layoutY="213.0" prefHeight="74.0" prefWidth="112.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="306.0" text="Date" textFill="#acacaca8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="date2" prefHeight="63.0" prefWidth="262.0" text="22 Oct">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="info23" layoutX="656.0" layoutY="208.0" prefHeight="74.0" prefWidth="112.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="306.0" text="Time" textFill="#acacaca8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="time2" prefHeight="47.0" prefWidth="123.0" text="05:44 PM">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="info24" layoutX="516.0" layoutY="326.0" prefHeight="122.0" prefWidth="238.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="306.0" text="Seats" textFill="#acacaca8" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="seats2" prefHeight="89.0" prefWidth="238.0" text="A1, B2, C2, D3, F5, G1, G2" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="info31" layoutX="847.0" layoutY="126.0" prefHeight="74.0" prefWidth="270.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="306.0" text="Movie" textFill="#ffffffa9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="name3" alignment="CENTER" prefHeight="63.0" prefWidth="262.0" text="Ratatouille" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Line fx:id="line3" endX="96.79998779296875" endY="-51.600006103515625" layoutX="999.0" layoutY="366.0" startX="-140.00001525878906" startY="-51.600006103515625" stroke="#cacaca" />
+      <VBox fx:id="info32" layoutX="854.0" layoutY="215.0" prefHeight="74.0" prefWidth="112.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="306.0" text="Date" textFill="#acacaca8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="date3" prefHeight="63.0" prefWidth="262.0" text="22 Oct">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="info33" layoutX="998.0" layoutY="210.0" prefHeight="74.0" prefWidth="112.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="306.0" text="Time" textFill="#acacaca8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="time3" prefHeight="47.0" prefWidth="123.0" text="05:44 PM">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="info34" layoutX="858.0" layoutY="328.0" prefHeight="122.0" prefWidth="238.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="306.0" text="Seats" textFill="#acacaca8" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="seats3" prefHeight="89.0" prefWidth="238.0" text="A1, B2, C2, D3, F5, G1, G2" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox fx:id="success" alignment="CENTER_LEFT" layoutX="386.0" layoutY="623.0" prefHeight="91.0" prefWidth="528.0" style="-fx-text-fill: #07b6f8dd;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/submit.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="Tickets booked successfully!" textFill="#07b6f8">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="help" layoutX="419.0" layoutY="650.0" text="* Please approach the help desk for assistance." textFill="#ffffff9a">
+         <font>
+            <Font name="System Italic" size="26.0" />
+         </font>
+      </Label>
+      <VBox layoutX="-5.0" layoutY="-7.0" maxWidth="115.0" prefHeight="773.0" prefWidth="115.0" style="-fx-background-color: #8057b5ff;">
+         <children>
+            <ImageView fx:id="movie" fitHeight="51.0" fitWidth="58.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Moviebtn" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Movies.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" right="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="ticket" fitHeight="40.0" fitWidth="63.0" layoutX="10.0" layoutY="310.0" onMouseClicked="#showBtn" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ticketicon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="addMovie" fitHeight="49.0" fitWidth="63.0" layoutX="10.0" layoutY="460.0" onMouseClicked="#addMoviebtn" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/addMovie.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="addShow" fitHeight="64.0" fitWidth="63.0" layoutX="10.0" layoutY="162.0" onMouseClicked="#addShowbtn" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/addshow.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="logout" fitHeight="48.0" fitWidth="43.0" layoutX="10.0" layoutY="242.0" onMouseClicked="#logout" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logout.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="20.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <ImageView fx:id="close" fitHeight="17.0" fitWidth="17.0" layoutX="1100.0" layoutY="20.0" onMouseClicked="#exitApplication" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../Images/path2138.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="none" layoutX="419.0" layoutY="358.0" text="You haven't booked any tickets yet!" textFill="#ffffff7e">
+         <font>
+            <Font name="System Italic" size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

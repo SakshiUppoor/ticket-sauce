@@ -1,0 +1,97 @@
+ .check-box .box {
+
+-fx-background-color: #1c1b2bff;
+-fx-border-color:grey;
+-fx-border-radius:5px;
+ 
+-fx-padding:8px;
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+-fx-background-color: #8057b5ff;
+}
+ .check-box:disabled .box
+{
+-fx-background-color: #948495;
+
+
+}
+#reserved
+{
+	-fx-text-fill:#fff;
+}
+
+#btn
+{
+	-fx-background-radius:50px;
+	-fx-background-color:#8057b5ff;
+
+	
+}
+#btn:hover {
+  -fx-background-color:#481946;
+  
+ }
+ #btn1
+{
+	-fx-background-radius:50px;
+	-fx-background-color:#8057b5ff;
+	-fx-font-size:25px;
+	-fx-text-fill: #fff;
+	-fx-cursor:hand;
+ }
+ #btn1:hover {
+  -fx-background-color:#481946;
+  
+ }
+ #btn2
+ {-fx-background-radius:50px;
+ 	-fx-background-color: #1f1e30ff;
+ 	-fx-border:0px;
+
+ }
+ #star
+ {
+ 	-fx-font-size:25px;
+	-fx-text-fill: #da7a01f4;
+ }
+	
+	
+
+
+ #des
+ {
+ 	-fx-text-fill: #fff;
+ 	-fx-font-size:20px;
+ }
+ #DES
+ {
+ 		-fx-text-fill: #fff;
+ 	-fx-font-size:35px;
+ 	
+
+ }
+ #bg
+ {
+ 	-fx-background-color:rgba(77, 77, 77,0.3);
+ }
+ #button
+ {
+ 	-fx-background-color:rgba(77, 77, 77,0.8);
+ 		-fx-font-size:20px;
+
+
+ }
+ #text
+ {
+ 	-fx-prompt-text-fill:#fff;
+ 	 -fx-text-fill: #fff;
+ }

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1047.0" style="-fx-background-color: #1f1e30ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.InfoController">
+   <children>
+      <ImageView fx:id="poster" fitHeight="600.0" fitWidth="338.0" layoutX="38.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Brave.jpg" />
+         </image>
+      </ImageView>
+      <Label id="bg" layoutX="439.0" layoutY="482.0" prefHeight="226.0" prefWidth="548.0" stylesheets="@seat.css" />
+      <Label id="DES" layoutX="462.0" layoutY="490.0" prefHeight="52.0" prefWidth="197.0" text="Today" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font></Label>
+      <Label id="des" layoutX="740.0" layoutY="229.0" prefHeight="39.0" prefWidth="114.0" stylesheets="@seat.css" text="Box Office" wrapText="true" />
+      <HBox alignment="CENTER_RIGHT" layoutX="807.0" layoutY="30.0" prefHeight="59.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label fx:id="likes" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="90.0" prefWidth="279.0" text="200" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="38.0" onMouseClicked="#likeAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/like.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="37.0" layoutY="1.0" prefHeight="100.0" prefWidth="437.0">
+         <children>
+            <Label fx:id="name" prefHeight="90.0" prefWidth="279.0" text="Ratatouille" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="description" alignment="TOP_LEFT" layoutX="445.0" layoutY="298.0" prefHeight="116.0" prefWidth="586.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." textFill="#ffffffb8" wrapText="true">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="boxoffice" layoutX="839.0" layoutY="203.0" prefHeight="90.0" prefWidth="279.0" text="6.7 million" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label id="des" layoutX="437.0" layoutY="438.0" prefHeight="39.0" prefWidth="459.0" text="Seat Information" textFill="#ffffffca" wrapText="true">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <VBox layoutX="462.0" layoutY="536.0" prefHeight="154.0" prefWidth="498.0" spacing="30.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox fx:id="show1" alignment="CENTER" onMouseClicked="#goToShow" prefHeight="78.0" prefWidth="162.0" style="-fx-background-color: rgba(77, 77, 77,0.8); -fx-border-color: white;">
+                     <children>
+                        <Label fx:id="time1" text="10:00 PM" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="showid1" text=" " />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="show2" alignment="CENTER" onMouseClicked="#goToShow" prefHeight="78.0" prefWidth="162.0" style="-fx-background-color: rgba(77, 77, 77,0.8); -fx-border-color: white;">
+                     <children>
+                        <Label fx:id="time2" text="10:00 PM" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="showid2" text=" " />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="show3" alignment="CENTER" onMouseClicked="#goToShow" prefHeight="78.0" prefWidth="162.0" style="-fx-background-color: rgba(77, 77, 77,0.8); -fx-border-color: white;">
+                     <children>
+                        <Label fx:id="time3" text="10:00 PM" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="showid3" text=" " />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox fx:id="show4" alignment="CENTER" onMouseClicked="#goToShow" prefHeight="78.0" prefWidth="162.0" style="-fx-background-color: rgba(77, 77, 77,0.8); -fx-border-color: white;">
+                     <children>
+                        <Label fx:id="time4" text="10:00 PM" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="showid4" text=" " />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="show5" alignment="CENTER" onMouseClicked="#goToShow" prefHeight="78.0" prefWidth="162.0" style="-fx-background-color: rgba(77, 77, 77,0.8); -fx-border-color: white;">
+                     <children>
+                        <Label fx:id="time5" text="10:00 PM" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="showid5" text=" " />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="show6" alignment="CENTER" onMouseClicked="#goToShow" prefHeight="78.0" prefWidth="162.0" style="-fx-background-color: rgba(77, 77, 77,0.8); -fx-border-color: white;">
+                     <children>
+                        <Label fx:id="time6" text="10:00 PM" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="showid6" text=" " />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="noshow" alignment="CENTER" layoutX="565.0" layoutY="591.0" prefHeight="44.0" prefWidth="305.0" text="No shows available yet." textFill="#8256b5">
+         <font>
+            <Font name="System Italic" size="26.0" />
+         </font>
+      </Label>
+      <VBox layoutX="447.0" layoutY="100.0" prefHeight="170.0" prefWidth="179.0" spacing="30.0">
+         <children>
+            <Label id="des" prefHeight="39.0" prefWidth="114.0" stylesheets="@seat.css" text="Release date" wrapText="true" />
+            <Label id="des" prefHeight="39.0" prefWidth="114.0" stylesheets="@seat.css" text="Directors" wrapText="true" />
+            <Label id="des" prefHeight="39.0" prefWidth="114.0" stylesheets="@seat.css" text="Budget" wrapText="true" />
+         </children>
+      </VBox>
+      <VBox layoutX="575.0" layoutY="93.0" prefHeight="170.0" prefWidth="179.0" spacing="20.0">
+         <children>
+            <Label fx:id="date" prefHeight="90.0" prefWidth="279.0" text="22 July, 2010" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="directors" prefHeight="90.0" prefWidth="279.0" text="A, B, c" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="budget" prefHeight="90.0" prefWidth="279.0" text="2.3 million" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+       <HBox layoutX="437.0" layoutY="29.0" prefHeight="42.0" prefWidth="264.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/path8450-8.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/path8450-8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/path8450-8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/path8450-8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="171.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/path8450-8.png" />
+               </image>
+            </ImageView>
+            <Label id="star" prefHeight="30.0" prefWidth="59.0" stylesheets="@seat.css" text="   5.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

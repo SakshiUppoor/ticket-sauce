@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import java.util.ArrayList?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="763.0" prefWidth="1159.0" style="-fx-background-color: #1f1e30ff;" stylesheets="@seat.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.SeatpgController">
+   <children>
+      <VBox layoutY="-2.0" maxWidth="115.0" prefHeight="766.0" prefWidth="115.0" style="-fx-background-color: #8057b5ff;">
+         <children>
+            <ImageView fx:id="movie" fitHeight="51.0" fitWidth="58.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Moviebtn" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Movies.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" right="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="ticket" fitHeight="40.0" fitWidth="63.0" layoutX="10.0" layoutY="310.0" onMouseClicked="#showBtn" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ticketicon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="addMovie" fitHeight="49.0" fitWidth="63.0" layoutX="10.0" layoutY="460.0" onMouseClicked="#addMoviebtn" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/addMovie.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="addShow" fitHeight="64.0" fitWidth="63.0" layoutX="10.0" layoutY="162.0" onMouseClicked="#addShowbtn" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/addshow.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="logout" fitHeight="48.0" fitWidth="43.0" layoutX="10.0" layoutY="242.0" onMouseClicked="#logout" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logout.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="20.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <GridPane layoutX="187.0" layoutY="329.0" minHeight="50.0" minWidth="50.0" prefHeight="300.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="80.0" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="80.0" minWidth="60.0" prefWidth="60.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="15.0" minWidth="20.0" prefWidth="15.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="15.0" minWidth="15.0" prefWidth="15.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="60.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="60.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <CheckBox fx:id="E2" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="D2" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="D1" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="E1" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="D3" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="E3" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="E4" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="D4" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="D5" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="E5" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="F1" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="F2" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="F3" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="F4" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="F5" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="C1" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="C2" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="C3" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="C4" maxHeight="60.0" maxWidth="60.0" mnemonicParsing="false" onAction="#updateSeats" prefHeight="50.0" prefWidth="50.0" text=" " GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="C5" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="H2" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="9" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="H3" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="9" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="H4" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="9" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="I2" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="10" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="I3" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="10" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="I4" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="10" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="A2" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="A3" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="A4" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="B2" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="B3" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="B4" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="G1" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="G2" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="G3" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="G4" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="G5" mnemonicParsing="false" onAction="#updateSeats" text=" " GridPane.columnIndex="7" GridPane.rowIndex="5">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </CheckBox>
+         </children>
+
+<fx:define>
+        <ArrayList fx:id="seats">
+            <fx:reference source="A2" />
+            <fx:reference source="A3" />
+            <fx:reference source="A4" />
+            <fx:reference source="B2" />
+            <fx:reference source="B3" />
+            <fx:reference source="B4" />
+            <fx:reference source="C1" />
+            <fx:reference source="C2" />
+            <fx:reference source="C3" />
+            <fx:reference source="C4" />
+            <fx:reference source="C5" />
+            <fx:reference source="D1" />
+            <fx:reference source="D2" />
+            <fx:reference source="D3" />
+            <fx:reference source="D4" />
+            <fx:reference source="D5" />
+            <fx:reference source="E1" />
+            <fx:reference source="E2" />
+            <fx:reference source="E3" />
+            <fx:reference source="E4" />
+            <fx:reference source="E5" />
+            <fx:reference source="F1" />
+            <fx:reference source="F2" />
+            <fx:reference source="F3" />
+            <fx:reference source="F4" />
+            <fx:reference source="F5" />
+            <fx:reference source="G1" />
+            <fx:reference source="G2" />
+            <fx:reference source="G3" />
+            <fx:reference source="G4" />
+            <fx:reference source="G5" />
+            <fx:reference source="H2" />
+            <fx:reference source="H3" />
+            <fx:reference source="H4" />
+            <fx:reference source="I2" />
+            <fx:reference source="I3" />
+            <fx:reference source="I4" />
+        </ArrayList>
+    </fx:define>
+
+      </GridPane>
+      <VBox alignment="TOP_CENTER" layoutX="824.0" layoutY="109.0" prefHeight="645.0" prefWidth="328.0">
+         <children>
+            <Label prefHeight="70.0" prefWidth="161.0" text=" Selected Seats" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox fx:id="seat1" alignment="CENTER" prefHeight="49.0" prefWidth="328.0" visible="false">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="189.0" text="Row 1/ Column 1" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="₹ 100" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="seat2" alignment="CENTER" prefHeight="49.0" prefWidth="328.0" visible="false">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="189.0" text="Row 1/ Column 1" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="₹ 100" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="seat3" alignment="CENTER" prefHeight="49.0" prefWidth="328.0" visible="false">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="189.0" text="Row 1/ Column 1" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="₹ 100" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="seat4" alignment="CENTER" prefHeight="49.0" prefWidth="328.0" visible="false">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="189.0" text="Row 1/ Column 1" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="₹ 100" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="seat5" alignment="CENTER" prefHeight="49.0" prefWidth="328.0" visible="false">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="189.0" text="Row 1/ Column 1" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="₹ 100" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="seat6" alignment="CENTER" prefHeight="49.0" prefWidth="328.0" visible="false">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="189.0" text="Row 1/ Column 1" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="₹ 100" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="seat7" alignment="CENTER" prefHeight="49.0" prefWidth="328.0" visible="false">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="189.0" text="Row 1/ Column 1" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="₹ 100" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="seat8" alignment="CENTER" prefHeight="49.0" prefWidth="328.0" visible="false">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="189.0" text="Row 1/ Column 1" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="₹ 100" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="seat9" alignment="CENTER" prefHeight="49.0" prefWidth="328.0" visible="false">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="189.0" text="Row 1/ Column 1" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="₹ 100" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="328.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="145.0" text="Total" textFill="#dad0d0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="total" text="₹ 300" textFill="#45bbff">
+                     <font>
+                        <Font name="SansSerif Regular" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="btn" onAction="#bookTicket" prefHeight="54.0" prefWidth="309.0" text="Book Ticket" textFill="#fcf6f6">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <fx:define>
+        <ArrayList fx:id="seatsinfo">
+            <fx:reference source="seat1" />
+            <fx:reference source="seat2" />
+            <fx:reference source="seat3" />
+            <fx:reference source="seat4" />
+            <fx:reference source="seat5" />
+            <fx:reference source="seat6" />
+            <fx:reference source="seat7" />
+            <fx:reference source="seat8" />
+            <fx:reference source="seat9" />
+        </ArrayList>
+    </fx:define>
+
+      </VBox>
+      <CheckBox id="yourSeat" layoutX="644.0" layoutY="646.0" mnemonicParsing="false" selected="true" stylesheets="@seat.css" text="Selected" textFill="#c2baba">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="454.0" layoutY="646.0" mnemonicParsing="false" text="Available" textAlignment="CENTER" textFill="#c2baba">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox id="reserved" disable="true" layoutX="233.0" layoutY="646.0" mnemonicParsing="false" stylesheets="@seat.css" text="Reserved" textFill="WHITE">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="movieName" layoutX="145.0" layoutY="29.0" prefHeight="112.0" prefWidth="530.0" text="BRAVE" textFill="#f8f0f0">
+         <font>
+            <Font name="Century Gothic" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="321.0" text="A" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="321.0" text="B" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="319.0" text="C" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="428.0" layoutY="320.0" text="D" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="323.0" text="E" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="557.0" layoutY="324.0" text="F" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="323.0" text="G" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="702.0" layoutY="327.0" text="H" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="327.0" text="I" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="383.0" text="1" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="432.0" text="2" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="500.0" text="3" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="541.0" text="4" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="595.0" text="5" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="showdetails" alignment="CENTER_RIGHT" layoutX="428.0" layoutY="42.0" prefHeight="70.0" prefWidth="379.0" text=" Selected Seats" textFill="#45bbff">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="192.0" fitWidth="753.0" layoutX="105.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/screen.png" />
+         </image>
+      </ImageView>
+      
+      <ImageView fx:id="close" fitHeight="17.0" fitWidth="17.0" layoutX="1105.0" layoutY="25.0" onMouseClicked="#exitApplication" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../Images/path2138.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="32.0" layoutX="878.0" layoutY="693.0" opacity="0.68" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 45;" visible="false">
+         <image>
+            <Image url="@../Images/ticketicon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

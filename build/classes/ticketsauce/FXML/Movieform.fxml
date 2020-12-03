@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1042.0" style="-fx-background-color: #1f1e30ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.MovieformController">
+   <children>
+      <JFXButton id="signup" fx:id="submit" layoutX="420.0" layoutY="624.0" onAction="#createMovie" stylesheets="@styles.css" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </JFXButton>
+      <VBox layoutX="57.0" layoutY="107.0" prefHeight="471.0" prefWidth="404.0" spacing="30.0">
+         <children>
+            <JFXTextField fx:id="name" focusColor="WHITE" labelFloat="true" promptText="Movie Name" style="-fx-text-fill: #fff; -fx-prompt-text-fill: #fff;" unFocusColor="#8057b5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="duration" focusColor="WHITE" labelFloat="true" prefHeight="86.0" prefWidth="394.0" promptText="Duration" style="-fx-text-fill: #fff; -fx-prompt-text-fill: #fff;" unFocusColor="#8057b5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="description" focusColor="WHITE" labelFloat="true" prefHeight="231.0" prefWidth="404.0" promptText="Description" style="-fx-prompt-text-fill: #fff; -fx-text-fill: #fff;" unFocusColor="#8057b5" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextArea>
+            <JFXTextField fx:id="budget" focusColor="WHITE" labelFloat="true" promptText="Budget" style="-fx-text-fill: #fff; -fx-prompt-text-fill: #fff;" unFocusColor="#8057b5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <VBox layoutX="572.0" layoutY="84.0" prefHeight="500.0" prefWidth="404.0" spacing="30.0">
+         <children>
+            <JFXTextField fx:id="rate" focusColor="WHITE" labelFloat="true" prefHeight="86.0" prefWidth="259.0" promptText="Rate" style="-fx-text-fill: #fff; -fx-prompt-text-fill: #fff;" unFocusColor="#8057b5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="date" focusColor="WHITE" labelFloat="true" promptText="Release Date" style="-fx-text-fill: #fff; -fx-prompt-text-fill: #fff;" unFocusColor="#8057b5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="directors" focusColor="WHITE" labelFloat="true" prefHeight="246.0" prefWidth="404.0" promptText="Directors" style="-fx-prompt-text-fill: #fff; -fx-text-fill: #fff;" unFocusColor="#8057b5" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextArea>
+            <JFXTextField fx:id="boxoffice" focusColor="WHITE" labelFloat="true" promptText="Box Office" style="-fx-text-fill: #fff; -fx-prompt-text-fill: #fff;" unFocusColor="#8057b5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <Label layoutX="58.0" layoutY="6.0" text="Add Movie" textFill="WHITE">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -25,7 +25,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.application.Platform;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseDragEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 
 /**
@@ -60,11 +63,18 @@ public class SignupController implements Initializable {
 
     @FXML
     private JFXButton signup;
+    
+    
+    @FXML
+    private ImageView close;
 
     private Connection connection;
     private DBHandler handler;
     private PreparedStatement pst;
     
+    private Stage myStage;
+    private double x, y;
+    private Parent root;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         warning.setVisible(false);
@@ -174,4 +184,20 @@ public class SignupController implements Initializable {
         window.show();
     }
     
+    public void setStage(Stage stage, Parent root)
+    {
+        myStage = stage;
+        root = root;
+    }
+    
+    @FXML
+    void exitApplication(MouseEvent event) throws ClassNotFoundException, SQLException {
+        
+        handler = new DBHandler();
+        String q1="UPDATE users SET is_logged_in=0;";
+        connection = handler.getConnection();
+        pst = connection.prepareStatement(q1);
+        pst.executeUpdate();
+        Platform.exit();
+    }
 }

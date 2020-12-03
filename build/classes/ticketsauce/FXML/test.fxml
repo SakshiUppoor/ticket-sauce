@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="849.0" prefWidth="1490.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="1041.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketsauce.TestController">
+   <children>
+      <JFXTextField fx:id="text" layoutX="354.0" layoutY="138.0" />
+      <JFXCheckBox fx:id="a2" layoutX="292.0" layoutY="321.0" prefHeight="246.0" prefWidth="30.0" style="-fx-padding: 10px;" stylesheets="@test.css" text=" ">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="a1" layoutX="202.0" layoutY="325.0" prefHeight="246.0" prefWidth="30.0" style="-fx-padding: 10px;" stylesheets="@test.css" text=" ">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="a3" layoutX="395.0" layoutY="321.0" prefHeight="246.0" prefWidth="30.0" style="-fx-padding: 10px;" stylesheets="@test.css" text=" ">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </JFXCheckBox>
+      <GridPane fx:id="seats" layoutX="60.0" layoutY="142.0" style="-fx-background-color: red;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

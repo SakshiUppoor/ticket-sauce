@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ticketsauce.Controllers;
+package ticketsauce;
 
 import com.jfoenix.controls.*;
 import java.io.IOException;
@@ -32,7 +32,7 @@ import javafx.scene.layout.HBox;
  *
  * @author hp
  */
-public class LoginController implements Initializable {
+public class Admin implements Initializable {
     
     @FXML
     private JFXButton join;
@@ -131,11 +131,11 @@ public class LoginController implements Initializable {
                         message.setText("Incorrect password");
                     }
                 } catch (SQLException ex) {
-                    Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Admin.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         } catch (SQLException ex) {
-            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Admin.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         finally
@@ -143,7 +143,7 @@ public class LoginController implements Initializable {
             try {
                 connection.close();
             } catch (SQLException ex) {
-                Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Admin.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
